@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-import Utils.ConexionDB;
+import conexion.ConexionDB;
 
 public class LuniqRegistroScreen extends JFrame {
 
@@ -84,7 +84,7 @@ public class LuniqRegistroScreen extends JFrame {
         getContentPane().add(surnameField);
 
         // Aviso legal
-        JLabel terms = new JLabel("<html><center>Al crear una cuenta, aceptas nuestros <a href='#'>Términos de uso</a>.<br>Consulta nuestra <a href='#'>Política de privacidad</a>.</center></html>");
+        JLabel terms = new JLabel("<html><center>Al crear una cuenta, aceptas nuestros <a>Términos de uso</a>.<br>Consulta nuestra <a>Política de privacidad</a>.</center></html>");
         terms.setFont(new Font("SansSerif", Font.PLAIN, 11));
         terms.setBounds(253, 487, 313, 40);
         getContentPane().add(terms);
