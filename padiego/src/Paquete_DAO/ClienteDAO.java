@@ -1,13 +1,11 @@
-
+package Paquete_DAO;
 import Model.Cliente;
-import Utils.ConexionDB;
+import conexion.ConexionDB;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-
-package Paquete_DAO;
 
 
 public class ClienteDAO {
@@ -65,7 +63,7 @@ public class ClienteDAO {
 	}
 
 	public List<Paquete_DAO.ClienteDAO> listar() throws SQLException {
-        List<Cliente> clientes = new ArrayList<>();
+        List<ClienteDAO> clientes = new ArrayList<>();
         String query = "SELECT * FROM clientes";
         try (Statement stmt = conn.createStatement(); ResultSet rs = stmt.executeQuery(query)) {
             while (rs.next()) {

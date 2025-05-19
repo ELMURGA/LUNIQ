@@ -1,11 +1,11 @@
-	import Paquete_DAO.ClienteDAO;
-	import Model.Cliente;
-
-	import java.sql.SQLException;
-	import java.util.List;
-
-
 package Test;
+
+import Model.Cliente;
+import Paquete_DAO.ClienteDAO;
+
+import java.sql.SQLException;
+import java.util.List;
+
 
 public class ClienteDAOTest {
 
@@ -27,7 +27,7 @@ public class ClienteDAOTest {
 	            System.out.println("Cliente insertado correctamente");
 
 	            // Listar clientes
-	            List<ClienteDAOTest> clientes = clienteDAO.listar();
+	            List<ClienteDAO> clientes = clienteDAO.listar();
 	            clientes.forEach(c -> System.out.println(c.getNombre()));
 	        } catch (SQLException e) {
 	            e.printStackTrace();
