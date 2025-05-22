@@ -1,5 +1,6 @@
 package Proyecto;
 
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -18,12 +19,12 @@ public class ConexionMySQL {
     // Base de datos a la que nos conectamos
     private String BD;
     // Usuario de la base de datos
-    private String USUARIO;
+    private String USUARIO;	
     // Contraseña del usuario de la base de datos
     private String PASS;
     // Objeto donde se almacenará nuestra conexión
     private Connection connection;
-    // Indica que está en localhost	
+    // Indica que está en localhost
     private String HOST;
     // Zona horaria
     private TimeZone zonahoraria;
@@ -37,8 +38,8 @@ public class ConexionMySQL {
      */
     public ConexionMySQL(String usuario, String pass, String bd) {
         HOST = "localhost";
-        USUARIO = "Usuario_ProyectoFinal";
-        PASS = "Medac 24";
+        USUARIO = usuario;
+        PASS = pass;
         BD = bd;
         connection = null;
     }
@@ -98,17 +99,5 @@ public class ConexionMySQL {
         return rset;
     }
 
-    /**
-     * Ejecuta una consulta INSERT, DELETE o UPDATE
-     *
-     * @param consulta Consulta INSERT, DELETE o UPDATE a ejecutar
-     * @return Cantidad de filas afectadas
-     * @throws SQLException Se lanzará cuando haya un fallo con la base de datos
-     */
-    public int ejecutarInsertDeleteUpdate(String consulta) throws SQLException {
-        Statement stmt = connection.createStatement();
-        int fila = stmt.executeUpdate(consulta);
 
-        return fila;
-    }
 }
