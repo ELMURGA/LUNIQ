@@ -41,8 +41,8 @@ mvn test
 📌 JavaDoc generado para todas las clases públicas. 📌 Este archivo README.md documenta el despliegue, configuración y estructura.
 
 # 👨‍💻 AUTORES
-Alejandro Hernández Murga
-Diego Capellán Fernández
+- Alejandro Hernández Murga
+- Diego Capellán Fernández
 
 # 📅 FECHA DE ENTREGA
 📌 26 mayo 2025.
