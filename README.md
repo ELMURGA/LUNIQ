@@ -6,7 +6,7 @@ Este proyecto ha sido desarrollado como parte del módulo de integración de Des
 ✔️ Registro e inicio de sesión de usuarios ✔️ Catálogo de productos con imágenes ✔️ Vista detallada de cada producto ✔️ Añadir productos al carrito de compras ✔️ Gestión y edición del perfil de usuario ✔️ Persistencia de datos con operaciones CRUD mediante JDBC ✔️ Pruebas unitarias con JUnit 5
 
 # 🛠 TECNOLOGÍAS UTILIZADAS
-🔹 Lenguaje: Java SE 17 🔹 Interfaz Gráfica: Java Swing 🔹 Base de Datos: Oracle Cloud Autonomous Database 🔹 Persistencia: JDBC 🔹 Gestión de Código: Git + GitHub 🔹 Pruebas: JUnit 5 🔹 IDE Utilizado: IntelliJ IDEA
+🔹 Lenguaje: Java SE 17 🔹 Interfaz Gráfica: Java Swing 🔹 Base de Datos: XAMP + PHPMyAdmin 🔹 Persistencia: JDBC 🔹 Gestión de Código: Git + GitHub 🔹 Pruebas: JUnit 5 🔹 IDE Utilizado: Eclipse
 
 # 📁 ESTRUCTURA DEL PROYECTO
 
